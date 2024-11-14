@@ -1,0 +1,53 @@
+function FhpnCJbDjviZAKeZqSnoMXnDWQyhcZPocSNylNncJId(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
+
+
+function hWQsNuKpSSVwgPihBxVtCQXbnqLesoDkbbmkcgFKlBfndBGKEbWQbuoScqJm(code)res=FhpnCJbDjviZAKeZqSnoMXnDWQyhcZPocSNylNncJId({})for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
+
+
+local b=hWQsNuKpSSVwgPihBxVtCQXbnqLesoDkbbmkcgFKlBfndBGKEbWQbuoScqJm({6825,6930,7035,7140,7245,7350,7455,7560,7665,7770,7875,7980,8085,8190,8295,8400,8505,8610,8715,8820,8925,9030,9135,9240,9345,9450,10185,10290,10395,10500,10605,10710,10815,10920,11025,11130,11235,11340,11445,11550,11655,11760,11865,11970,12075,12180,12285,12390,12495,12600,12705,12810,5040,5145,5250,5355,5460,5565,5670,5775,5880,5985,4515,4935})
+function TKYQJyBAMlbcUSqHknPtKRCqRoOseGteVdXfmIDknhxFrEDBBLbXISvbDm(data) 
+    m=string.sub(data, 0, 55) 
+    data=data:gsub(m,hWQsNuKpSSVwgPihBxVtCQXbnqLesoDkbbmkcgFKlBfndBGKEbWQbuoScqJm({}))
+    data = string.gsub(data, hWQsNuKpSSVwgPihBxVtCQXbnqLesoDkbbmkcgFKlBfndBGKEbWQbuoScqJm({9555,9870})..b..hWQsNuKpSSVwgPihBxVtCQXbnqLesoDkbbmkcgFKlBfndBGKEbWQbuoScqJm({6405,9765}), hWQsNuKpSSVwgPihBxVtCQXbnqLesoDkbbmkcgFKlBfndBGKEbWQbuoScqJm({})) 
+    return (data:gsub(hWQsNuKpSSVwgPihBxVtCQXbnqLesoDkbbmkcgFKlBfndBGKEbWQbuoScqJm({4830}), function(x) 
+        if (x == hWQsNuKpSSVwgPihBxVtCQXbnqLesoDkbbmkcgFKlBfndBGKEbWQbuoScqJm({6405})) then return hWQsNuKpSSVwgPihBxVtCQXbnqLesoDkbbmkcgFKlBfndBGKEbWQbuoScqJm({}) end 
+        local r,f=hWQsNuKpSSVwgPihBxVtCQXbnqLesoDkbbmkcgFKlBfndBGKEbWQbuoScqJm({}),(b:find(x)-1) 
+        for i=6,1,-1 do 
+            r=r..(f%2^i-f%2^(i-1)>0 and hWQsNuKpSSVwgPihBxVtCQXbnqLesoDkbbmkcgFKlBfndBGKEbWQbuoScqJm({5145}) or hWQsNuKpSSVwgPihBxVtCQXbnqLesoDkbbmkcgFKlBfndBGKEbWQbuoScqJm({5040})) 
+        end 
+        return r; 
+    end):gsub(hWQsNuKpSSVwgPihBxVtCQXbnqLesoDkbbmkcgFKlBfndBGKEbWQbuoScqJm({3885,10500,3885,10500,3885,10500,6615,3885,10500,6615,3885,10500,6615,3885,10500,6615,3885,10500,6615,3885,10500,6615}), function(x) 
+        if (#x ~= 8) then return hWQsNuKpSSVwgPihBxVtCQXbnqLesoDkbbmkcgFKlBfndBGKEbWQbuoScqJm({}) end 
+        local c=0 
+        for i=1,8 do 
+            c=c+(x:sub(i,i)==hWQsNuKpSSVwgPihBxVtCQXbnqLesoDkbbmkcgFKlBfndBGKEbWQbuoScqJm({5145}) and 2^(8-i) or 0) 
+        end 
+        return string.char(c) 
+    end)) 
+end
+
+local killRadius = 20
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+local function killNearbyPlayers()
+    local playerPosition = character.HumanoidRootPart.Position
+
+    for _, otherPlayer in pairs(game.Players:GetPlayers()) do
+        if otherPlayer ~= player then
+            local otherCharacter = otherPlayer.Character
+            if otherCharacter and otherCharacter:FindFirstChild(TKYQJyBAMlbcUSqHknPtKRCqRoOseGteVdXfmIDknhxFrEDBBLbXISvbDm(hWQsNuKpSSVwgPihBxVtCQXbnqLesoDkbbmkcgFKlBfndBGKEbWQbuoScqJm({8610,8295,11340,12285,11655,11865,7035,7560,9240,9030,9030,7245,8505,6930,8190,8085,7245,12705,12810,8610,9030,7245,9030,12495,7035,8820,8085,6825,10395,10395,10185,9450,11970,11550,10710,10395,8400,8400,7875,12180,12180,8400,8190,7455,7140,11760,10185,9135,9240,11970,7980,10710,8085,8400,11655,8715,7560,9030,12180,9345,9135,5565,12390,10185,9135,8505,6405}))) and otherCharacter:FindFirstChild(TKYQJyBAMlbcUSqHknPtKRCqRoOseGteVdXfmIDknhxFrEDBBLbXISvbDm(hWQsNuKpSSVwgPihBxVtCQXbnqLesoDkbbmkcgFKlBfndBGKEbWQbuoScqJm({12600,7140,11235,11970,12810,9135,9030,10500,8400,7350,6930,12390,10500,8820,7770,12285,7665,8295,11550,7560,10605,7665,6825,8610,11655,11550,10605,8400,7770,11655,12390,7350,10605,9030,11550,11235,8190,10185,12810,10815,11550,7770,10185,11340,7035,12705,9450,8505,10290,9345,7350,12495,11655,12600,8925,8715,7560,9030,12180,9345,9135,5565,12390,10185,9135,8610,8715,10290,5250,5985,5040,8925,7455,7350,12705,10500,6825,6405,6405}))) then
+                local otherPosition = otherCharacter.HumanoidRootPart.Position
+                local distance = (otherPosition - playerPosition).Magnitude
+
+                if distance <= killRadius then
+                    otherCharacter.Humanoid.Health = 0
+                end
+            end
+        end
+    end
+end
+
+killNearbyPlayers()
+        
